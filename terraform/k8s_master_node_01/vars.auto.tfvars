@@ -1,0 +1,16 @@
+target_node = "pve"
+vm_name = "k8s-master-node01"
+vm_desc = ""
+template = "PackerImage-ubuntu-server22.04"
+vm_cpu_number = 2
+vm_memory = 4096
+disk_size = "30G"
+disk_storage = "SAS01"
+vlan_tag = "1010"
+private_ip = "10.0.0.100"
+public_ip = "10.3.3.100"
+subnet = "24"
+gateway = "10.0.0.254"
+vm_user = "ubuntu"
+vm_password = "k8s-ubuntu@1" 
+default_user_password = "k8s-ubuntu@1" 

@@ -1,0 +1,21 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: ssd-nfs-storage
+provisioner: ff1.dev/ssd
+allowVolumeExpansion: true
+reclaimPolicy: Retain
+parameters:
+  onDelete: retain
+
+---
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: hdd-nfs-storage
+provisioner: ff1.dev/hdd
+allowVolumeExpansion: true
+reclaimPolicy: Retain
+parameters:
+  onDelete: retain
